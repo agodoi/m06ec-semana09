@@ -1,28 +1,27 @@
 # Aula: Análise AC sobre a Polarização DC do Transistor BJT
 
-## 1. Motivação: Por que fazer mais cálculos?
+## 1. Por que analisar sinal AC sobre o sinal DC?
 
-### Objetivo da Seção
-
-Perceberem que a análise DC responde apenas **onde o transistor opera**, enquanto a análise AC responde **como ele amplifica**.
+Porque a análise DC responde apenas **onde o transistor opera**, enquanto a análise AC responde **como ele amplifica**.
 
 ### Nós já resolvemos o circuito. Ou não?
 
 Considere o circuito abaixo já polarizado:
 
-* VB = 1,8V
-* VE = 1,1V
-* VC = 6,2V
+* VB = 1,6V
+* VE = 0,9V
+* VC = 5,3V
+* VCE = 5,8V
 * IC = 1mA
-* VCE = 5,1V
+
 
 > Se eu aplicar um sinal senoidal de 100 mV na entrada, qual será a amplitude do sinal na saída?
 
-* Sabe calcular VCE?
-* sabe calcular (IC?
-* sabe verificar a região ativa?
+* Qual seria o novo VCE?
+* Qual seria o novo IC?
+* Saberia verificar se está na região ativa?
 
-Se sabe, beleza, caso não, precisa voltar nos autoestudos da aula anterior. Porém, esses cálculos não conseguem determinar:
+Porém, esses cálculos não conseguem determinar:
 
 * ganho
 * amplitude de saída
@@ -55,18 +54,15 @@ Se sabe, beleza, caso não, precisa voltar nos autoestudos da aula anterior. Por
 Lembra da reta de carga?
 
 * Região de Corte
-* Região ativa
+* Região Ativa
 * Região de Saturação
-* Ponto Q
+* Logo, encontra o Ponto Q que é o centro da Reta de Carga.
 
-> "O ponto Q não existe para amplificar. Ele existe para preparar o transistor para amplificar."
-
-### Analogia
-
-> "É como ajustar a posição inicial de um elevador. Antes de movimentá-lo para cima e para baixo, ele precisa estar parado em um andar adequado."
+> **O ponto Q não existe para amplificar. Ele existe para preparar o transistor para amplificar.**
+> **É como ajustar a posição inicial de um elevador. Antes de movimentá-lo para cima e para baixo, ele precisa estar parado em um andar adequado.**
 
 
-# Surge um novo problema
+# 2. Surge um novo problema
 
 **Agora o sinal começa a variar**
 
@@ -79,32 +75,22 @@ AC → valor variável
 Exemplo:
 
 ```text
-Base = 1,80 V  (DC)
+Base = 1,60 V  (DC)
 
-Sinal = ±50 mV (AC)
+Sinal = ±100 mV (AC)
 ```
 
 Resultado:
 
 ```text
-1,75 V ↔ 1,85 V
+1,7 V ↔ 1,5 V
 ```
 
 ### Pergunta
 
-> O que acontece com a corrente do transistor quando a tensão da base oscila alguns milivolts ao redor do ponto Q?
+> **O que acontece com a corrente do transistor quando a tensão da base oscila alguns milivolts ao redor do ponto Q?**
 
----
-
-### Gancho para o próximo tópico
-
-> "Para responder essa pergunta precisamos abandonar temporariamente a análise DC e enxergar o transistor de uma forma completamente diferente: como um dispositivo de pequenos sinais."
-
----
-
-# Fechamento da seção
-
-Finalize com um único slide de síntese:
+> **Para responder essa pergunta precisamos abandonar temporariamente a análise DC e enxergar o transistor de uma forma completamente diferente: como um dispositivo de pequenos sinais.**
 
 ```text
 Análise DC
@@ -120,15 +106,9 @@ Permite criar o modelo AC
 Calcula o ganho do amplificador
 ```
 
-### Frase final
+> **A polarização DC não é o fim da análise. Ela é apenas o ponto de partida da análise AC.**
 
-> "A polarização DC não é o fim da análise. Ela é apenas o ponto de partida da análise AC."
-
-Essa abertura normalmente leva de **10 a 15 minutos** e prepara perfeitamente o terreno para introduzir **pequenos sinais, tensão térmica (26 mV) e resistência dinâmica (r_e)**.
-
-
-
-
+> O pulo do gato da aula de hoje é entender o **re** = resistência dinâmica.
 
 
 # 2. Revisão rápida do ponto Q
