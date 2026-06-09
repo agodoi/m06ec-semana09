@@ -27,8 +27,6 @@
 
 > Se o transistor está polarizado corretamente, como prever quanto o sinal será amplificado?
 
----
-
 # 2. Revisão rápida do ponto Q
 
 ### Objetivo
