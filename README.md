@@ -29,10 +29,6 @@
 
 # 2. Revisão rápida do ponto Q
 
-### Objetivo
-
-Relembrar a importância da polarização.
-
 ### Tópicos
 
 * Região de corte
