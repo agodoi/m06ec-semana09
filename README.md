@@ -197,21 +197,8 @@ Vtotal = VDC + VAC
 > 0,7 V: Valor aproximado necessário para polarizar a junção base-emissor.
 > 26 mV: Constante física associada à temperatura que determina quão sensível ele fica depois que já está ligado.
 
-# 6. O que é o (re)?
 
-### Objetivo
 
-Construir o conceito central da aula.
-
-### Tópicos
-
-* Resistência dinâmica
-* Não é um resistor físico
-* Inclinação da curva do diodo
-
-### Fórmula
-
-r_e=\frac{26mV}{I_E}
 
 ### Experimento mental
 
@@ -220,9 +207,25 @@ Comparar:
 * (I_E=0,5mA)
 * (I_E=5mA)
 
-e observar a mudança em (r_e).
+e observar a mudança em re.
 
----
+| Situação | (I_E)  | (r_e) | (\Delta I_E) para 10 mV |
+| -------- | ------ | ----- | ----------------------- |
+| Caso A   | 0,5 mA | 52 Ω  | 0,19 mA                 |
+| Caso B   | 5 mA   | 5,2 Ω | 1,92 mA                 |
+
+> **Qual dos dois transistores responde mais fortemente ao mesmo sinal de entrada?**
+
+```
+IE ↑
+↓
+re ↓
+↓
+ΔIE ↑
+↓
+Ganho ↑
+```
+> **Quando aumentamos a corrente de polarização, a junção fica mais sensível às pequenas variações do sinal. O transistor não mudou. O que mudou foi o ponto Q.**
 
 # 7. Ligação entre Polarização DC e Ganho AC
 
