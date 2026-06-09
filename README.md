@@ -119,45 +119,58 @@ Calcula o ganho do amplificador
 > O pulo do gato da aula de hoje é entender o **re** = resistência dinâmica.
 
 
-# 3. Separando DC e AC
+# 3. Separando DC e AC. Tem jeito?
 
-### Tópicos
 
-* Componente DC
-* Componente AC
-* Sinal total
+* Sim, é possível analisar separadamente;
+* Embora, o transistor opere simultaneamente com sinais DC e AC;
+* Cada componente exerce uma função diferente;
+* Ao analisar cada contribuição separadamente, estamos usando o princípio da superposição.
+* Em circuitos lineares, a resposta total é a soma das respostas individuais.
+
+> **O transistor nunca vê apenas o sinal AC. Ele vê o sinal AC somado ao nível DC de polarização.**
+
+> 1,60 V + senoide, o resultado será IC variável.
 
 ### Matemática
 
 Vtotal = VDC + VAC
 
-### Conceito
+### Como removemos o sinal DC no Princípio da Superposição?
 
-O transistor enxerga:
+* Fonte DC passa a ser um curto no circuito do ponto de vista do AC. Isto é, simplesmente é eliminado do circuito;
+* Capacitor também passa a ser um curto quando se tem frequência AC;
+* XC​=1 / 2πfC​
 
-* um valor médio (DC)
-* uma pequena variação (AC)
-
-simultaneamente.
-
+> **Agora que conseguimos separar o sinal variável do sinal de polarização, surge uma nova pergunta: como o transistor reage a pequenas variações de tensão ao redor do ponto Q? É exatamente daí que nasce o conceito de Pequenos Sinais e a Resistência Dinâmica re**
+	​
 
 # 4. O que significa Pequenos Sinais?
 
-- Uma aproximação linear.
+- O transistor não se comporta como um resistor;
+- Logo, o transistor é um dispositivo **não linear**. Lembre-se da curva do diodo? É uma exponencial. O transistor é feito de 2 diodos internamente;
 
-### Tópicos
+> **Se eu dobrar VBE, a corrente IC ou IE dobra?**
+	​
+- Porém, próximo ao ponto Q, ele pode ser aproximado por um circuito linear;
+- De longe, a curva é uma exponencial. Mas se você fosse uma formiga no ponto Q, andando 10mV para cima e para baixo, é praticamente uma reta;
+- Essa aproximação é a base de toda a análise AC de pequenos sinais.
 
-* Curva exponencial da junção BE
-* Operação ao redor do ponto Q
-* Linearização local
-
-### Visual
-
-Curva exponencial + zoom no ponto Q.
+> **Pequenos sinais observam apenas um trecho muito pequeno da curva.**
 
 ### Conclusão
 
-> A análise AC observa apenas a vizinhança do ponto de operação.
+> **A análise AC observa apenas a vizinhança do ponto de operação.**
+
+* Toda reta possui uma inclinação
+* Se a curva local parece uma reta: R= ΔI / ΔV (Lei de Ohm)
+* Então R = ΔVBE / ΔIE
+
+> **Esse R é o re. Resistência Dinâmica.**
+	​
+- O **re** mede a sensibilidade da corrente do emissor a pequenas variações da tensão base-emissor.
+
+> Quanto menor o re, mais facilmente o transistor converte pequenas variações de tensão em variações de corrente.
 
 
 # 5. De onde surgem os 26 mV?
