@@ -227,90 +227,84 @@ Ganho ↑
 ```
 > **Quando aumentamos a corrente de polarização, a junção fica mais sensível às pequenas variações do sinal. O transistor não mudou. O que mudou foi o ponto Q.**
 
-# 7. Ligação entre Polarização DC e Ganho AC
-
-### Objetivo
-
-Fazer o "clique" conceitual.
-
-### Construção
-
-[
-I_E
-]
-
-↓
-
-[
-r_e
-]
-
-↓
-
-[
-A_v
-]
-
-### Mensagem
-
-> O ganho nasce da polarização.
-
----
-
-# 8. Como transformar um circuito DC em AC
-
-### Objetivo
-
-Ensinar o procedimento padrão.
-
-### Passos
-
-#### Passo 1
-
-Resolver a polarização DC.
-
-#### Passo 2
-
-Eliminar (V_{CC}).
-
-#### Passo 3
-
-Curto-circuitar capacitores.
-
-#### Passo 4
-
-Inserir o modelo de pequenos sinais.
-
----
+# X. Construindo o Modelo AC do Transistor
 
 # 9. Modelo re do transistor
 
-### Objetivo
+* Agora que descobrimos o que é o re, onde exatamente ele aparece no circuito?
+* Transformando um BC548 em um modelo equivalente e simplificado.
 
-Apresentar o modelo equivalente.
+### Transforme o BC548 em um modelo equivalente
 
-### Tópicos
+* Junção BE → é complicado de transformar isso num modelo
+* Junção BC → idem
+* Regiões N e P → é foda
+* Portadores de carga → é mais ainda
 
-* (\beta r_e)
-* fonte de corrente controlada
-* conceito de impedância de entrada
+Solução:
 
-### Mostrar
+> **Para pequenos sinais: β*re**​ e vamos chamar isso de **ENTRADA**
+> **fonte de corrente controlada: IC​=β*IB**​ e vamos chamar isso de **SAÍDA**
+> O transistor desaparece e é substituído por elementos que reproduzem seu comportamento para pequenos sinais na **ENTRADA** e na **SAÍDA**.
 
-Modelo equivalente simplificado do emissor comum.
+### Conclusões
 
----
+* Zi​≈β*re​
+* Exemplo: β=100, re=10Ω, logo: Zi =1000Ω
+* Por isso que alguns MP3 players são melhores que outros ao conectar no seu amplificador. Isso chama-se casamento de impedância.
+* Quando o seu MP3 player possui uma saída próxima do Zi do seu Amplificador, o desempenho é maior devido ao conceito de **Máxima Transferência de Potência** (MTP).
 
-# 10. Ganho de tensão
+> **Embora a junção tenha apenas 10 Ω, olhando pela base enxergamos aproximadamente 1 kΩ.**
 
-### Objetivo
+```
+Vi
+↓
+Ib
+↓
+Ic = βIb
+↓
+RC
+↓
+Vo
+```
 
-Chegar à primeira equação importante.
+* Que é o mesmo que:
+
+```
+Entrada
+   ↓
+ βre
+   ↓
+Fonte controlada
+   ↓
+Saída
+```
+
+* Mais uma conclusão
+
+```
+Polarização DC
+      ↓
+IE
+      ↓
+re
+      ↓
+Modelo AC
+      ↓
+Av
+```
+
+> **Agora que o transistor foi substituído por um circuito equivalente, finalmente temos todas as ferramentas para calcular o ganho do amplificador.**
+
+# X. Ganho de tensão
 
 ### Fórmula
 
-A_v\approx-\frac{R_C}{r_e}
-
+> 𝐴𝑣  ≈ −𝑅𝐶 / 𝑟𝑒
+​​
+PAREI AQUI
+>
+> 
 ### Discutir
 
 * inversão de fase
@@ -385,378 +379,7 @@ Polarização DC
  Ganho Av
 ```
 
-Essa estrutura costuma ocupar entre **2h e 3h de aula**, dependendo do tempo dedicado ao exemplo numérico e à simulação. O ponto central é que o aluno saia entendendo que **a análise AC não substitui a análise DC; ela depende completamente dela**.
 
-
-
-
-
-Essa seção é crucial porque é nela que os alunos entendem por que podemos "ignorar" a fonte (V_{CC}) e substituir capacitores por curtos na análise AC. Se essa parte ficar bem consolidada, o restante da aula flui naturalmente.
-
----
-
-# 3. Separando DC e AC
-
-## Objetivo da Seção
-
-Levar os estudantes a compreender que:
-
-* o transistor opera simultaneamente com sinais DC e AC;
-* cada componente exerce uma função diferente;
-* podemos analisar cada contribuição separadamente usando o princípio da superposição.
-
----
-
-# Slide 1 — O transistor vê duas coisas ao mesmo tempo
-
-### Título
-
-**O transistor recebe dois sinais simultaneamente**
-
-### Diagrama
-
-Mostrar:
-
-```text
-       Sinal AC
-           ~
-           │
-           ▼
-
-      +---------+
-      |  BJT    |
-      +---------+
-           ▲
-           │
-
-      Polarização DC
-```
-
----
-
-### Explicação
-
-Pergunte:
-
-> "Quando ligamos um amplificador de áudio, o transistor recebe apenas a música?"
-
-Normalmente alguém responderá que não.
-
-Continue:
-
-> "Além da música, existe uma rede de polarização mantendo o transistor na região ativa."
-
-Portanto:
-
-```text
-Polarização DC
-+
-Sinal AC
-=
-Sinal total aplicado
-```
-
----
-
-### Mensagem principal
-
-> O transistor nunca vê apenas o sinal AC. Ele vê o sinal AC somado ao nível DC de polarização.
-
----
-
-# Slide 2 — O sinal real na base
-
-### Título
-
-**O que realmente chega à base do transistor?**
-
-Apresente:
-
-```text
-Polarização DC = 1,80 V
-
-Sinal AC = ±50 mV
-```
-
-Então mostre:
-
-```text
-VB(t) = 1,80V + Vac(t)
-```
-
----
-
-### Exemplo visual
-
-```text
-1,85 V  ─────╮    ╭─────
-             │╲  ╱│
-1,80 V  ─────┼─\/─┼─────
-             │    │
-1,75 V  ─────╯    ╰─────
-```
-
----
-
-### Explicação
-
-Mostre que:
-
-* a senoide não oscila em torno de 0 V;
-* ela oscila em torno do ponto de polarização.
-
----
-
-### Pergunta
-
-> "O transistor amplifica os 1,80 V ou apenas os 50 mV que estão variando?"
-
-Deixe a turma discutir.
-
----
-
-# Slide 3 — O que realmente interessa para amplificar?
-
-### Título
-
-**O transistor responde às variações**
-
-Mostre dois casos:
-
-### Caso 1
-
-```text
-1,80 V constante
-```
-
-Resultado:
-
-```text
-IC constante
-```
-
----
-
-### Caso 2
-
-```text
-1,80 V + senoide
-```
-
-Resultado:
-
-```text
-IC variável
-```
-
----
-
-### Conclusão
-
-> O componente DC mantém o transistor ligado.
->
-> O componente AC produz a variação de corrente responsável pela amplificação.
-
----
-
-# Slide 4 — O princípio da superposição
-
-### Título
-
-**Podemos analisar DC e AC separadamente**
-
-Introduza o conceito:
-
-> Em circuitos lineares, a resposta total é a soma das respostas individuais.
-
----
-
-### Mostrar
-
-[
-Resposta_{total}
-================
-
-Resposta_{DC}
-+
-Resposta_{AC}
-]
-
----
-
-### Aplicação ao transistor
-
-Primeiro:
-
-```text
-Análise DC
-↓
-Determina o ponto Q
-```
-
-Depois:
-
-```text
-Análise AC
-↓
-Determina ganho e impedâncias
-```
-
----
-
-### Mensagem
-
-> Embora ocorram simultaneamente, podemos estudá-las separadamente.
-
----
-
-# Slide 5 — O truque da análise AC
-
-### Título
-
-**Como "removemos" a polarização DC?**
-
-Pergunte:
-
-> "Se queremos estudar apenas o comportamento AC, o que fazemos com a fonte DC?"
-
----
-
-Mostre:
-
-```text
-VCC = constante
-```
-
-Para o sinal AC:
-
-```text
-não varia
-```
-
-Logo:
-
-```text
-equivale a terra AC
-```
-
----
-
-### Resultado
-
-Na análise AC:
-
-```text
-VCC
-↓
-Curto-circuito
-```
-
----
-
-### Mensagem importante
-
-> Não estamos desligando a fonte na vida real.
->
-> Estamos apenas removendo sua influência da análise AC.
-
----
-
-# Slide 6 — O papel dos capacitores
-
-### Título
-
-**Por que os capacitores viram curtos?**
-
-Mostrar:
-
-[
-X_C=\frac{1}{2\pi f C}
-]
-
-Sem aprofundar.
-
----
-
-### Explicação
-
-Para frequências de operação:
-
-* impedância muito pequena;
-* sinal atravessa facilmente.
-
-Portanto:
-
-```text
-Capacitor
-↓
-Curto-circuito AC
-```
-
----
-
-### Observação
-
-Explique que:
-
-* para DC → capacitor é aberto;
-* para AC → capacitor é quase um fio.
-
-Esse conceito costuma gerar vários "ahhh agora entendi".
-
----
-
-# Slide 7 — Transformação do circuito
-
-### Título
-
-**Nascimento do circuito equivalente AC**
-
-Mostrar uma sequência visual:
-
-### Etapa 1
-
-Circuito original.
-
-### Etapa 2
-
-Eliminar (V_{CC}).
-
-### Etapa 3
-
-Curto nos capacitores.
-
-### Etapa 4
-
-Circuito simplificado.
-
----
-
-### Mensagem final da seção
-
-> A análise DC nos entrega o ponto Q.
->
-> A análise AC elimina as fontes DC e simplifica o circuito para estudar apenas as pequenas variações responsáveis pela amplificação.
-
----
-
-# Fechamento da seção
-
-Encerrar com este fluxo:
-
-```text
-Circuito Real
-      ↓
-Separar DC e AC
-      ↓
-Análise DC
-      ↓
-Encontrar IE
-      ↓
-Análise AC
-      ↓
-Determinar ganho
-```
 
 ### Frase de transição para a próxima seção
 
