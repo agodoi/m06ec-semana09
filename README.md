@@ -86,6 +86,12 @@ Resultado:
 1,7 V ↔ 1,5 V
 ```
 
+1,50 V  ─────╮    ╭─────
+             │╲  ╱│
+1,60 V  ─────┼─\/─┼─────
+             │    │
+1,70 V  ─────╯    ╰─────
+
 ### Pergunta
 
 > **O que acontece com a corrente do transistor quando a tensão da base oscila alguns milivolts ao redor do ponto Q?**
@@ -109,20 +115,6 @@ Calcula o ganho do amplificador
 > **A polarização DC não é o fim da análise. Ela é apenas o ponto de partida da análise AC.**
 
 > O pulo do gato da aula de hoje é entender o **re** = resistência dinâmica.
-
-
-# 2. Revisão rápida do ponto Q
-
-### Tópicos
-
-* Região de corte
-* Região ativa
-* Região de saturação
-* Ponto de operação (Q)
-
-### Conclusão
-
-> O ponto Q não amplifica nada. Ele apenas posiciona o transistor para amplificar.
 
 
 # 3. Separando DC e AC
