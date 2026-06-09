@@ -1,8 +1,6 @@
 # Aula: Análise AC sobre a Polarização DC do Transistor BJT
 
-## 1. Motivação: Por que calcular tudo de novo?
-
-### Objetivo
+## 1. Por que fazer mais cálculos?
 
 - Estudar a necessidade da análise AC;
 - Entender com profundidade o comportamento do sinal do MP3 sobre o amplificador.
@@ -23,7 +21,7 @@
   * amplificação
   * resposta ao sinal de áudio
 
-### Pergunta disparadora
+### Pergunta
 
 > Se o transistor está polarizado corretamente, como prever quanto o sinal será amplificado?
 
@@ -36,17 +34,12 @@
 * Região de saturação
 * Ponto de operação (Q)
 
-### Mensagem principal
+### Conclusão
 
 > O ponto Q não amplifica nada. Ele apenas posiciona o transistor para amplificar.
 
----
 
 # 3. Separando DC e AC
-
-### Objetivo
-
-Introduzir o princípio da superposição.
 
 ### Tópicos
 
@@ -54,11 +47,9 @@ Introduzir o princípio da superposição.
 * Componente AC
 * Sinal total
 
-### Mostrar
+### Matemática
 
-[
-v_{total}=V_{DC}+v_{ac}
-]
+Vtotal = VDC + VAC
 
 ### Conceito
 
@@ -69,13 +60,10 @@ O transistor enxerga:
 
 simultaneamente.
 
----
 
 # 4. O que significa Pequenos Sinais?
 
-### Objetivo
-
-Introduzir a aproximação linear.
+- Uma aproximação linear.
 
 ### Tópicos
 
@@ -87,17 +75,14 @@ Introduzir a aproximação linear.
 
 Curva exponencial + zoom no ponto Q.
 
-### Mensagem
+### Conclusão
 
 > A análise AC observa apenas a vizinhança do ponto de operação.
 
----
 
 # 5. De onde surgem os 26 mV?
 
-### Objetivo
-
-Dar significado físico ao modelo.
+- Dar significado físico ao modelo.
 
 ### Tópicos
 
@@ -107,17 +92,13 @@ V_T=\frac{kT}{q}
 
 * Temperatura ambiente
 
-[
-V_T\approx26mV
-]
+VT≈ 26mV
 
-### Mensagem
+### Conclusão
 
 > Os 26 mV são uma constante física da junção PN.
 
----
-
-# 6. O que é o (r_e)?
+# 6. O que é o (re)?
 
 ### Objetivo
 
