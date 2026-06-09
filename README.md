@@ -167,29 +167,35 @@ Vtotal = VDC + VAC
 * Então R = ΔVBE / ΔIE
 
 > **Esse R é o re. Resistência Dinâmica.**
+> Logo, re = ΔVBE / ΔIE
 	​
 - O **re** mede a sensibilidade da corrente do emissor a pequenas variações da tensão base-emissor.
 
-> Quanto menor o re, mais facilmente o transistor converte pequenas variações de tensão em variações de corrente.
+> Quanto menor o **re**, mais facilmente o transistor converte pequenas variações de tensão em variações de corrente.
 
 
-# 5. De onde surgem os 26 mV?
+# 5. Como faço para encontrar re?
 
-- Dar significado físico ao modelo.
+### Matematicamente
 
-### Tópicos
+> re = 26mV / IE
 
-* Tensão térmica
+### De onde surge esses 26 mV?
 
-V_T=\frac{kT}{q}
+* Tensão térmica: VT=k*T / q
+* k Constante de Boltzmann, k=1,38×10−23 J/K;
+* T = temperatura ambiente em Kelvin;
+* q = carga de um único elétron, q = 1,602×10−19 C
+* Fazendo a conta: VT​=(1,38×10−23) * (298) / 1,602×10−19​
+* VT≈ 26mV
 
-* Temperatura ambiente
+### Conclusões
 
-VT≈ 26mV
-
-### Conclusão
-
+> A tensão térmica não é uma tensão aplicada. Ninguém conecta uma fonte de 26 mV ao transistor.
+> Ela representa o efeito da temperatura sobre o movimento dos portadores dentro do semicondutor.
 > Os 26 mV são uma constante física da junção PN.
+> 0,7 V: Valor aproximado necessário para polarizar a junção base-emissor.
+> 26 mV: Constante física associada à temperatura que determina quão sensível ele fica depois que já está ligado.
 
 # 6. O que é o (re)?
 
