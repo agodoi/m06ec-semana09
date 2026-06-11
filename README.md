@@ -304,5 +304,4 @@ Av
 * re aumenta → ganho diminui;
 * o sinal negativo é porque o sinal é invertido 180º, isto é, o sinal é defasado de 180º;
 
-# 8. Exemplo Prático
-
+# 8. Discussão da Análise Experimental
