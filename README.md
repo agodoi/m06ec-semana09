@@ -183,9 +183,9 @@ Vtotal = VDC + VAC
 ### De onde surge esses 26 mV?
 
 * Tensão térmica: VT=k*T / q
-	* k Constante de Boltzmann, k=1,38×10−23 J/K;
-	* T = temperatura ambiente em Kelvin;
-	* q = carga de um único elétron, q = 1,602×10−19 C
+* 	k Constante de Boltzmann, k=1,38×10−23 J/K;
+* 	T = temperatura ambiente em Kelvin;
+* 	q = carga de um único elétron, q = 1,602×10−19 C
 * Fazendo a conta: VT​=(1,38×10−23) * (298) / 1,602×10−19​
 * VT≈ 26mV
 
