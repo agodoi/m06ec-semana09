@@ -186,8 +186,7 @@ Vtotal = VDC + VAC
   -	k Constante de Boltzmann, k=1,38×10−23 J/K;
   -	T = temperatura ambiente em Kelvin;
   -	q = carga de um único elétron, q = 1,602×10−19 C
-* Fazendo a conta: VT​=(1,38×10−23) * (298) / 1,602×10−19​
-* VT≈ 26mV
+* Fazendo a conta: VT​=(1,38×10−23) * (298) / 1,602×10−19​. Logo VT≈ 26mV
 
 ### Conclusões
 
@@ -196,8 +195,6 @@ Vtotal = VDC + VAC
 > Os 26 mV são uma constante física da junção PN.
 > 0,7 V: Valor aproximado necessário para polarizar a junção base-emissor.
 > 26 mV: Constante física associada à temperatura que determina quão sensível ele fica depois que já está ligado.
-
-
 
 
 ### Experimento mental
@@ -227,9 +224,7 @@ Ganho ↑
 ```
 > **Quando aumentamos a corrente de polarização, a junção fica mais sensível às pequenas variações do sinal. O transistor não mudou. O que mudou foi o ponto Q.**
 
-# X. Construindo o Modelo AC do Transistor
-
-# 9. Modelo re do transistor
+# 6. Construindo o Modelo AC do Transistor
 
 * Agora que descobrimos o que é o re, onde exatamente ele aparece no circuito?
 * Transformando um BC548 em um modelo equivalente e simplificado.
