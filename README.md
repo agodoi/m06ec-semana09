@@ -29,7 +29,7 @@ Porém, esses cálculos não conseguem determinar:
 
 ### O que a análise DC realmente nos entrega?
 
-**A análise DC responde apenas metade da história**
+**A análise DC responde apenas metade da história**. Veja a tabela:
 
 ### Tabela
 
