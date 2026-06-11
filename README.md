@@ -94,11 +94,11 @@ Resultado:
 1,50 V  ─────╯    ╰─────
 ```
 
-### Pergunta
+### Perguntas:
 
 > **O que acontece com a corrente do transistor quando a tensão da base oscila alguns milivolts ao redor do ponto Q?**
 
-> **Para responder essa pergunta precisamos abandonar temporariamente a análise DC e enxergar o transistor de uma forma completamente diferente: como um dispositivo de pequenos sinais.**
+> **Para responder essa pergunta precisamos abandonar temporariamente a análise DC e enxergar o transistor de uma forma completamente diferente: como um dispositivo de pequenos sinais.** Observe o fluxo abaixo que resume o que falei agora:
 
 ```text
 Análise DC
