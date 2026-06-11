@@ -101,13 +101,13 @@ Resultado:
 > **Para responder essa pergunta precisamos abandonar temporariamente a análise DC e enxergar o transistor de uma forma completamente diferente: como um dispositivo de pequenos sinais.** Observe o fluxo abaixo que resume o que falei agora:
 
 ```text
-Análise DC
+Análise DC **(autoestudos da aula passada)**
 ↓
 Encontra o ponto Q
 ↓
 Define a corrente IE
 ↓
-Determina o valor de re
+Determina o valor de re **(veremo isso hoje)**
 ↓
 Permite criar o modelo AC
 ↓
