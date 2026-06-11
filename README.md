@@ -153,7 +153,7 @@ Vtotal = VDC + VAC
 > **Se eu dobrar VBE, a corrente IC ou IE dobra?**
 	​
 - Porém, próximo ao ponto Q, ele pode ser aproximado por um circuito linear;
-- De longe, a curva é uma exponencial. Mas se você fosse uma formiga no ponto Q, andando 10mV para cima e para baixo, é praticamente uma reta;
+- De longe, a curva é uma exponencial, mas de perto, é uma reta. Se você fosse uma formiga no ponto Q, andando 10mV para cima e para baixo, é praticamente uma reta;
 - Essa aproximação é a base de toda a análise AC de pequenos sinais.
 
 > **Pequenos sinais observam apenas um trecho muito pequeno da curva.**
