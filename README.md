@@ -4,7 +4,7 @@
 
 Porque a análise DC responde apenas **onde o transistor opera**, enquanto a análise AC responde **como ele amplifica**.
 
-### Nós já resolvemos o circuito. Ou não?
+### Nós já resolvemos o circuito ou não?
 
 Considere o circuito abaixo já polarizado:
 
