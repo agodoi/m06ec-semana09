@@ -229,14 +229,14 @@ Ganho ↑
 * Agora que descobrimos o que é o re, onde exatamente ele aparece no circuito?
 * Transformando um BC548 em um modelo equivalente e simplificado.
 
-### Transforme o BC548 em um modelo equivalente
+### Como transformar o BC548 em um modelo equivalente?
 
 * Junção BE → é complicado de transformar isso num modelo
 * Junção BC → idem
 * Regiões N e P → é foda
 * Portadores de carga → é mais ainda
 
-Solução:
+### Solução:
 
 > **Para pequenos sinais: β*re**​ e vamos chamar isso de **ENTRADA**
 > **fonte de corrente controlada: IC​=β*IB**​ e vamos chamar isso de **SAÍDA**
@@ -291,93 +291,18 @@ Av
 
 > **Agora que o transistor foi substituído por um circuito equivalente, finalmente temos todas as ferramentas para calcular o ganho do amplificador.**
 
-# X. Ganho de tensão
+# 7. Ganho de tensão
+
+* Uma maneira de calcular o ganho de amplificador básico é dado pela fórmula abaixo;
+* O nosso amplificador é mais complexo que isso, mas é um conceito importante para entender um amplificador simples.
 
 ### Fórmula
 
 > 𝐴𝑣  ≈ −𝑅𝐶 / 𝑟𝑒
 ​​
-PAREI AQUI
->
-> 
-### Discutir
+* RC aumenta → ganho aumenta;
+* re aumenta → ganho diminui;
+* o sinal negativo é porque o sinal é invertido 180º, isto é, o sinal é defasado de 180º;
 
-* inversão de fase
-* influência de (R_C)
-* influência de (r_e)
-
----
-
-# 11. Exemplo Completo
-
-### Objetivo
-
-Conectar tudo.
-
-### Dados
-
-* (V_{CC})
-* (R_1)
-* (R_2)
-* (R_C)
-* (R_E)
-* (\beta)
-
-### Resolver
-
-1. Polarização DC
-2. (I_E)
-3. (r_e)
-4. Modelo AC
-5. Ganho
-
----
-
-# 12. Simulação LTspice
-
-### Objetivo
-
-Validar teoria.
-
-### Medidas
-
-* Entrada (CH1)
-* Saída (CH2)
-
-### Comparar
-
-[
-A_v=\frac{V_o}{V_i}
-]
-
-medido versus calculado.
-
----
-
-# 13. Fechamento
-
-### Síntese final
-
-Mostre apenas este fluxo:
-
-```text
-Polarização DC
-      ↓
-   Ponto Q
-      ↓
-     IE
-      ↓
-     re
-      ↓
- Modelo AC
-      ↓
- Ganho Av
-```
-
-
-
-### Frase de transição para a próxima seção
-
-> "Agora que conseguimos separar o sinal variável do sinal de polarização, surge uma nova pergunta: como o transistor reage a pequenas variações de tensão ao redor do ponto Q? É exatamente daí que nasce o conceito de pequenos sinais e a resistência dinâmica (r_e)."
-
+# 8. Exemplo Prático
 
