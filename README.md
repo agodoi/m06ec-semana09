@@ -306,7 +306,7 @@ Av
 
 # 8. Exercícios Matemáticos
 
-## Fórumulas Necessárias CC para Análise Exata
+## Fórmulas Necessárias CC para Análise Exata
 
 ### Rth = R1 // R2
 ### Eth = VR2 = R2.Vcc / (R1+R2)
@@ -326,13 +326,35 @@ Av
 ### re = 26mV / Ie
 
 
-## Fórumulas Necessárias AC
+## Fórmulas Necessárias AC
 
 ### Av = - Rc / re
 
+## Condição para Método Aproximado
+
+### βRe >= 10R2
+
 ## Enunciado
 
-Dado o circuito abaixo, determine a tensão de polarização CC VCE e a corrente
-IC para a configuração com divisor de tensão.
+#### 1) Dado o circuito abaixo, determine a tensão de polarização CC VCE e a corrente IC para a configuração com divisor de tensão.
 
 <img src="https://github.com/agodoi/m06ec-semana09/blob/main/assets/exec_semana09.png" width="500">
+
+Respostas:
+> Rth = 3,55 kΩ
+> Eth = 2 V
+> ib = 8,38 uA
+> Icq = 0,84 mA
+> Vceq = 12,34 V
+
+#### 2) Refaça para β = 50
+
+Respostas:
+> Rth e Eth são iguais
+> Ib = 16,24 uA
+> Icq = 0,81 mA
+> Vceq = 12,69 V
+
+#### 3) Dado o circuito abaixo, determine as mesmas variáveis do exercícios anterior.
+
+<img src="https://github.com/agodoi/m06ec-semana09/blob/main/assets/exec2_semana09.png" width="500">
