@@ -353,7 +353,7 @@ Respostas:
 > Rth e Eth são iguais;
 > Ib = 16,24 uA;
 > Icq = 0,81 mA;
-> Vceq = 12,69 V;
+> Vceq = 12,69 V
 
 #### 3) Dado o circuito abaixo, determine as mesmas variáveis do exercícios anterior.
 
