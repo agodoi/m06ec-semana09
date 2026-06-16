@@ -312,6 +312,9 @@ Av
 ### Eth = VR2 = R2.Vcc / (R1+R2)
 ### Ib = (Eth - Vbe) / Rth + (β+1).Re
 ### Icq = β.Ib
+### Icq ≈ Ieq
+### Ic ≈ Ie
+### Icsat = Vcc / (Rc+Re)
 ### Ie = (β+1).Ib
 ### Ie = Ve / Re
 ### Ib = Ie / β+1
@@ -319,15 +322,8 @@ Av
 ### Vbe ≈ 0,7V
 ### Vb = R2.Vcc / (R1+R2)
 ### Ve = Vb - Vbe
-### Icsat = Vcc / (Rc+Re)
 ### Vc = Vcc - Ic.Rc
-### ICQ ≈ Ie
-### Ie ≈ Ic
 ### re = 26mV / Ie
-
-### Vb = (R2 / (R1+R2)).Vcc
-### Ve = Vb - Vbe
-### Ie = Ve / Re
 
 
 ## Fórumulas Necessárias AC
