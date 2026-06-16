@@ -304,4 +304,33 @@ Av
 * re aumenta → ganho diminui;
 * o sinal negativo é porque o sinal é invertido 180º, isto é, o sinal é defasado de 180º;
 
-# 8. Discussão da Análise Experimental
+# 8. Exercícios Matemáticos
+
+## Fórumulas Necessárias CC
+
+### Rth = R1 // R2
+### Eth = VR2 = R2.Vcc / (R1+R2)
+### Ib = (Eth - Vbe) / Rth + (β+1).Re
+### Icq = β.Ib
+### Ie = (β+1).Ib
+### Ie = Ve / Re
+### Ib = Ie / β+1
+### Vceq = Vcc - Ic.(Rc+Re)
+### Vbe ≈ 0,7V
+### Vb = R2.Vcc / (R1+R2)
+### Ve = Vb - Vbe
+### Icsat = Vcc / (Rc+Re)
+### Vc = Vcc - Ic.Rc
+### ICQ ≈ Ie
+### Ie ≈ Ic
+### re = 26mV / Ie
+
+### Vb = (R2 / (R1+R2)).Vcc
+### Ve = Vb - Vbe
+### Ie = Ve / Re
+
+
+## Fórumulas Necessárias AC
+
+### Av = - Rc / re
+
