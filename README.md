@@ -244,10 +244,10 @@ Ganho ↑
 
 ### Conclusões
 
-* Zi​≈β*re​
-* Exemplo: β=100, re=10Ω, logo: Zi =1000Ω
-* Por isso que alguns MP3 players são melhores que outros ao conectar no seu amplificador. Isso chama-se casamento de impedância.
-* Quando o seu MP3 player possui uma saída próxima do Zi do seu Amplificador, o desempenho é maior devido ao conceito de **Máxima Transferência de Potência** (MTP).
+> * Zi​≈β*re​
+> * Exemplo: β=100, re=10Ω, logo: Zi =1000Ω
+> * Por isso que alguns MP3 players são melhores que outros ao conectar no seu amplificador. Isso chama-se casamento de impedância.
+> * Quando o seu MP3 player possui uma saída próxima do Zi do seu Amplificador, o desempenho é maior devido ao conceito de **Máxima Transferência de Potência** (MTP).
 
 > **Embora a junção tenha apenas 10 Ω, olhando pela base enxergamos aproximadamente 1 kΩ.**
 
