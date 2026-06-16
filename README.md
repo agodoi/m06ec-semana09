@@ -335,4 +335,4 @@ Av
 Dado o circuito abaixo, determine a tensão de polarização CC VCE e a corrente
 IC para a configuração com divisor de tensão.
 
-<img src="https://github.com/agodoi/m06ec-semana09/blob/main/assets/exec_semana09.png" width="300">
+<img src="https://github.com/agodoi/m06ec-semana09/blob/main/assets/exec_semana09.png" width="600">
