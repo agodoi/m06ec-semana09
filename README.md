@@ -330,9 +330,14 @@ Av
 
 ### Av = - Rc / re
 
-## Condição para Método Aproximado
+## Método Aproximado (precisa aprovar essa relação: βRe >= 10R2)
 
 ### βRe >= 10R2
+### Vb = R2.Vcc / (R1+R2)
+### Ve = Vb - Vbe
+### Ie = Ve / Re
+### Icq ≈ Ie
+### Vceq = Vcc - Ic.(Rc+Re)
 
 ## Enunciado
 
@@ -347,7 +352,9 @@ Respostas:
 > Icq = 0,84 mA;
 > Vceq = 12,34 V
 
-#### 2) Refaça para β = 50
+#### 2) Refaça usando o método aproximado e compare os resultados.
+
+#### 3) Refaça para β = 50
 
 Respostas:
 > Rth e Eth são iguais;
@@ -355,6 +362,6 @@ Respostas:
 > Icq = 0,81 mA;
 > Vceq = 12,69 V
 
-#### 3) Dado o circuito abaixo, determine as mesmas variáveis do exercícios anterior.
+#### 4) Dado o circuito abaixo, determine as mesmas variáveis do exercícios anterior.
 
 <img src="https://github.com/agodoi/m06ec-semana09/blob/main/assets/exec2_semana09.png" width="500">
