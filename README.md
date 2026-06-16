@@ -341,19 +341,19 @@ Av
 <img src="https://github.com/agodoi/m06ec-semana09/blob/main/assets/exec_semana09.png" width="500">
 
 Respostas:
-> Rth = 3,55 kΩ
-> Eth = 2 V
-> ib = 8,38 uA
-> Icq = 0,84 mA
+> Rth = 3,55 kΩ;
+> Eth = 2 V;
+> ib = 8,38 uA;
+> Icq = 0,84 mA;
 > Vceq = 12,34 V
 
 #### 2) Refaça para β = 50
 
 Respostas:
-> Rth e Eth são iguais
-> Ib = 16,24 uA
-> Icq = 0,81 mA
-> Vceq = 12,69 V
+> Rth e Eth são iguais;
+> Ib = 16,24 uA;
+> Icq = 0,81 mA;
+> Vceq = 12,69 V;
 
 #### 3) Dado o circuito abaixo, determine as mesmas variáveis do exercícios anterior.
 
