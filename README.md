@@ -306,7 +306,7 @@ Av
 
 # 8. Exercícios Matemáticos
 
-## Fórumulas Necessárias CC
+## Fórumulas Necessárias CC para Análise Exata
 
 ### Rth = R1 // R2
 ### Eth = VR2 = R2.Vcc / (R1+R2)
@@ -329,4 +329,9 @@ Av
 ## Fórumulas Necessárias AC
 
 ### Av = - Rc / re
+
+## Enunciado
+
+Dado o circuito abaixo, determine a tensão de polarização CC VCE e a corrente
+IC para a configuração com divisor de tensão.
 
